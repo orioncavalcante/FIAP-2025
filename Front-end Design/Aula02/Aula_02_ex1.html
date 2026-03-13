@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02 - HTML</title>
+    <style>
+        body,
+        html {
+            width: 80%;
+            /* Defina a largura desejada para a área centralizada */
+            margin: 0 auto;
+            /* Isso centralizará a tag horizontalmente */
+            padding-top: 50px;
+            /* Opcional: adicione um espaçamento superior */
+            padding-bottom: 50px;
+            /* Opcional: adicione um espaçamento inferior */
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="topo">Uso de Lista não ordenada e ordenada</h1>
+    <ul type="circle"> <!-- aqui há um atributo para mudar o tipo de marcador -->
+        <li>Empresa</li>
+        <li>Produto</li>
+        <li>Serviços</li>
+        <li>Contato</li>
+    </ul>
+
+    <p>-----------------------------------</p>
+
+    <ol type="I" start="3">
+        <!-- aqui há um atributo para mudar o tipo ordenador e um atributo para definir a ordem de inicio da lista -->
+        <li>Empresa</li>
+        <li>Produto</li>
+        <li>Serviços</li>
+        <li>Contato</li>
+    </ol>
+
+    <hr>
+
+    <div>
+        <h1>Exercício: Receita - Bolo de Chocolate</h1>
+
+        <h2>Ingredientes</h2>
+        <ul>
+            <li>4 ovos</li>
+            <li>4 colheres (sopa) de chocolate em pó</li>
+            <li>2 colheres (sopa) de manteiga</li>
+            <li>3 xícaras (chá) de farinha de trigo</li>
+            <li>2 xícaras (chá) de açúcar</li>
+            <li>2 colheres (sopa) de fermento</li>
+            <li>1 xícara (chá) de leite</li>
+        </ul>
+
+        <h2>Modo de Preparo</h2>
+        <ol>
+            <li>Em um liquidificador adicione os ovos, o chocolate em pó, a manteiga, a farinha de trigo, o açúcar e o
+                leite, depois bata por 5 minutos.</li>
+            <li>Adicione o fermento e misture com uma espátula delicadamente.</li>
+            <li> Em uma forma untada, despeje a massa e asse em forno médio (180 ºC) preaquecido por cerca de 40
+                minutos.
+                Não se esqueça de usar uma forma alta para essa receita: como leva duas colheres de fermento, ela cresce
+                bastante! Outra solução pode ser colocar apenas uma colher de fermento e manter a sua receita em uma
+                forma pequena.</li>
+        </ol>
+    </div>
+
+    <hr>
+
+    <h1>Lista de definição</h1>
+    <dl>
+        <dt>HTML</dt>
+        <dd>
+            HTML é a linguagem de marcação de textos utilizada
+            para exibir textos como páginas na Internet.
+        </dd>
+        <dt>Navegador</dt>
+        <dd>
+            Navegador é o software que requisita um documento HTML
+            através do protocolo HTTP e exibe seu conteúdo em uma
+            janela.
+        </dd>
+    </dl>
+
+    <hr>
+
+    <h1>Tabelas</h1>
+    <table border="2">
+        <tr><!-- início da linha do cabeçalho-->
+            <th>Cabeçalho 1</th>
+            <th>Cabeçalho 2</th>
+            <th>Cabeçalho 3 </th>
+        </tr>
+        <tr><!-- início da primeira linha-->
+            <td>Linha 1 - Coluna 1</td>
+            <td>Linha 1 - Coluna 2</td>
+            <td>Linha 1 - Coluna 3</td>
+        </tr>
+        <tr><!-- início da segunda linha-->
+            <td>Linha 2 - Coluna 1</td>
+            <td>Linha 2 - Coluna 2</td>
+            <td>Linha 2 - Coluna 3</td>
+        </tr>
+    </table>
+
+    <br>
+    <hr>
+
+    <h1>Uso de links</h1>
+
+    <h2>Links relativos</h2>
+    <!-- Os links relativos são aqueles que apontam para páginas localizadas dentro do mesmo projeto. 
+        Se a página referenciada estiver na mesma pasta, basta mencionar o seu nome para gerar o link -->
+    <a href="produtos.html">Produtos</a>
+    <a href="contato.html">Contato</a>
+
+    <!-- Caso o arquivo esteja em uma pasta específica, a mesma deve ser mencionada. -->
+    <a href="pages/produtos.html">Contato</a>
+
+    <h2>Links absolutos</h2>
+    <!-- Os links absolutos são aqueles cujo destino apontam para páginas que estão 
+        fora do site e deve ser especificado utilizando a URL completa: -->
+    <a href="https://www.fiap.com.br/graduacao/bacharelado/engenharia-de-software/">Engenharia de Software</a>
+
+    <h2>Links internos</h2>
+    <!-- Os links internos permitem fazer referências a seções de sua página, para as quais a id é utilizada: -->
+    <a href="#topo">Vá ao topo da página</a>
+
+    <!-- Também é possível usar como destino uma seção específica em uma página diferente: -->
+    <a href="contato.html#formulario">Formulario de contato</a>
+    <hr>
+
+</body>
+
+</html>
