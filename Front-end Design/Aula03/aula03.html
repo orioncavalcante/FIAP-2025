@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03</title>
+</head>
+<body>
+    <h1>aula 03</h1>
+    <h2>Continuando tags de estruturas</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, assumenda.</p>
+    <h2>Topo do Site!</h2>
+    
+
+    <form action="">
+        <h3>Cadastro Pessoal</h3>
+
+        <p>Informe seu nome e sobrenome:</p>
+        <label for="nome_sobrenome">Nome e Sobrenome:</label>
+        <input type="text" name="nome_sobrenome" placeholder="Digite aqui...">
+
+        <p>Selecione o seu gênero:</p>
+        <input type="radio" name="genero" value="M">
+        <label for="genero">Masculino</label><br>
+        <input type="radio" name="genero" value="F">
+        <label for="genero">Feminino</label><br>
+        <input type="radio" name="genero" value="O">
+        <label for="genero">Outro</label><br>
+
+        <p>Selecione quais meios de transporte você utiliza:</p>
+        <input type="checkbox" name="transporte" value="carro">
+        <label for="transporte">Carro</label><br>
+        <input type="checkbox" name="transporte" value="moto">
+        <label for="transporte">Moto</label><br>
+        <input type="checkbox" name="transporte" value="onibus">
+        <label for="transporte">Ônibus</label><br>
+        <input type="checkbox" name="transporte" value="a pé">
+        <label for="transporte">A pé</label><br>
+        <input type="checkbox" name="transporte" value="metro">
+        <label for="transporte">Metrô</label><br>
+        <input type="checkbox" name="transporte" value="bike">
+        <label for="transporte">Bike</label><br>
+        
+        <!-- select[name='tamanho']>option[value]*3 -->
+         
+        <select name="tamanhos">
+            <option value="g">G</option>
+            <option value="m">M</option>
+            <option value="p">P</option>
+        </select>
+        
+        <p>Conte sua opinião:</p>
+        <textarea name="opiniao">Digite aqui...</textarea>
+
+        <br><br>
+
+        <fieldset>
+            <legend>Confirme antes de enviar</legend>
+            <input type="checkbox" name="confirmacao" value="ok" required>
+            <label for="confirmacao">Confirmo tudo!</label>
+        </fieldset>
+
+        <br><br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+
+        <br><br><br>
+
+        <img src="img/macaco-leão.png" alt="macaco e leão">
+        <br>
+        <a href="https://www.example.com" target="_blank">
+            <img src="img/macaco-leão.png" alt="macaco-leão" width="64px">
+        </a>
+        
+    </form>
+
+    <a href="#topo">Ir para o topo!</a>
+</body>
+</html>
