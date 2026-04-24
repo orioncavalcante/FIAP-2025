@@ -1,0 +1,66 @@
+/* Pseudo-classes */
+
+h1 {
+    color: blue;
+}
+
+:checked {
+    margin-left: 25px;
+}
+
+input[type="radio"]:checked {
+    margin-left: 25px;
+}
+
+input[type="checkbox"]:checked {
+    margin-left: 25px;
+}
+
+option:checked {
+    color: red;
+}
+
+input:disabled {
+    background: #ccc;
+}
+
+input:required {
+    border: 1px solid red;
+}
+
+input[type="email"]:invalid {
+    background: orange;
+}
+
+input[type="email"]:valid {
+    background: green;
+}
+
+/* Pseudo-elementos */
+
+::placeholder {
+    color: rgb(6, 159, 197);
+}
+
+p::first-letter {
+    color: red;
+    text-transform: uppercase;
+}
+
+p::first-line {
+    color: blue;
+}
+
+p::selection {
+    color: red;
+    background: yellow;
+}
+
+::marker {
+    color: red;
+    font-size: 23px;
+}
+
+.minha-lista::marker {
+    color: green;
+}
