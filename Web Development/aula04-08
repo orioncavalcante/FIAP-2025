@@ -1,0 +1,51 @@
+// Extensão utilizada Quokka
+
+const filmes = ["Familia sacana", "50 tons de cinza", "2 girls one cup"]
+
+console.log(filmes[1])
+
+const filmesModificado = filmes.map((filmeAtual, posicao) => `O filme ${filmeAtual} está na posição ${posicao}`)
+
+console.log(filmesModificado)
+console.log(filmes)
+
+const modificarFilmes = (listaFilmes) => listaFilmes.map(filmeAtual => filmeAtual.toUpperCase())
+console.log(modificarFilmes(filmes))
+
+// Exercício
+
+const precos = [29.9, 150, 45.5, 8, 320, 99.99]
+
+const precosComDesconto = precos.map((precoAtual) => precoAtual * 0.9)
+console.log(precosComDesconto)
+
+
+const aplicarDesconto = (listaPrecos) => listaPrecos.map(precoAtual => precoAtual * 0.9)
+console.log(aplicarDesconto(precos))
+
+
+const precosCaros = precos.filter(precoAtual => precoAtual > 100)
+console.log(precosCaros)
+
+const filmes3 = 
+[
+    {
+        titulo: "Miranha",
+        anoLancamento: 2026,
+        diretor: "Tom Holland",
+        atores: ["Zendaya, Tom Holland"] 
+    },
+    {
+        titulo: "Avengers DoomsDay",
+        anoLancamento: 2026,
+        diretor: "Irmãos Russo",
+        atores: ["Chris Evans, Homem de Ferro"]
+    }
+]
+
+const criarCard = listarFilmes => listarFilmes.map(filmeAtual => {
+    return `<div>
+                <h1> ${filmeAtual.titulo}</h1>
+                <h3> ${filmeAtual.anoLancamento}</h3>
+            </div>`
+})
